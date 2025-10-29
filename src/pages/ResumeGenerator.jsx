@@ -1,40 +1,35 @@
 import React from 'react'
-import { IoDocumentText } from "react-icons/io5";
+import { IoDocument } from "react-icons/io5";
+import { Link } from 'react-router-dom'
 import { FaDownload } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 
 
-function ResumeGenerator() {
+function ResumeGerator() {
   return (
-    <div className='container-fluid'>
-      <h2 className='text-center my-5'>Create a Job-winning Resume in Minutes</h2>
-      <div style={{height:'60vh'}} className='row justify-content-center align-items-center'>
-        <div className='col-md-1'></div>
-        <div className='col-md-4 border rounded shadow p-5 text-center'>
-          <IoDocumentText className='text-primary fs-1 mb-3'/>
-          <h4>Add your Information</h4>
-          <p>Add pre-written examples to each section</p>
-          <h5>Step 1</h5>
-        </div>
-        
-        <div className='col-md-2'></div>
-         <div className='col-md-4 border rounded shadow p-5 text-center'>
-          <FaDownload className='text-primary fs-1 mb-3' />
-          <h4>Download your Resume</h4>
-          <p>Download and start applying</p>
-          <h5>Step 2</h5>
-        </div>
-        <div className='col-md-4'>
+<section className=' container-fluid' >
 
-        </div>
-        <div className='col-md-1'></div>
+  <h2 className='text-center m-5' >Create a job winning resume in minutes</h2>
+<div style={{height:'60vh'}}  className="row justify-content-center align-items-center ">
+  <div className="col-md-1"></div>
+  <div className="col-md-4 border shadow rounded text-center p-5 ">
+<IoDocument className='text-primary fs-1 mb-3' />
+<h4>Add your information</h4>
+<h6>add pre-written examples to each section</h6>
+<h3>step 1</h3>
 
-      </div>
-       <div className="text-center mb-5">
-        <Link>LET"S START</Link>
-       </div>
-    </div>
-  )
+  </div>
+  <div className="col-md-2"></div>
+  <div className="col-md-4 border shadow rounded text-center p-5 ">
+<FaDownload className='text-danger fs-1 mb-3' />
+<h4>Download your resume</h4>
+<h6>Download and start applying</h6>
+<h3>step 2</h3>
+
+  </div>
+  <div className="col-md-1"></div>
+ <Link to={'/form'} className='btn text-white fs-5 ' style={{backgroundColor:'purple', width:'200px'}} > Lets start </Link>
+</div>
+</section>  )
 }
 
-export default ResumeGenerator
+export default ResumeGerator
